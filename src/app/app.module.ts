@@ -4,10 +4,12 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ContaCorrenteCadastrarComponent } from './components/views/conta-corrente/conta-corrente-cadastrar/conta-corrente-cadastrar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ContaCorrenteCadastrarComponent
   ],
   imports: [
     BrowserModule,

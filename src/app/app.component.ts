@@ -1,5 +1,5 @@
-import { Produto } from './models/Produto';
-import { ProdutoService } from './services/produto.service';
+import { ContaCorrente } from './models/Conta-Corrente';
+import { ContaCorrenteService } from './services/conta-corrente.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,14 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.sass'],
 })
 export class AppComponent implements OnInit {
-  produtos: Produto[] = [];
+  contasCorrentes: ContaCorrente[] = [];
 
-  constructor(private produtoService: ProdutoService) {}
+  constructor(private contaCorrenteService: ContaCorrenteService) {}
 
   ngOnInit(): void {
-    this.produtoService.list().subscribe((produtos) => {
-      this.produtos = produtos;
-      console.log(this.produtos);
+    this.contaCorrenteService.list().subscribe((contasCorrentes) => {
+      this.contasCorrentes = contasCorrentes;
+      console.log(this.contasCorrentes);
     });
   }
 }
