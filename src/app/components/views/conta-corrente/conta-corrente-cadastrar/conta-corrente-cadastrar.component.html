@@ -1,1 +1,9 @@
-<p>conta-corrente-cadastrar works!</p>
+<div>
+  <label for="nome">Nome:</label>
+  <input type="text" name="nome" [(ngModel)]="nome"/>
+</div>
+<div>
+  <label for="saldo">Saldo:</label>
+  <input type="text" name="saldo" [(ngModel)]="saldo"/>
+</div>
+<button (click)="cadastrar()">Cadastrar</button>

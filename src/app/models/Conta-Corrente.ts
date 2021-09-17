@@ -1,3 +1,5 @@
 export interface ContaCorrente {
-  _id?: string;
+  _id?: number;
+  nome: string;
+  saldo: number;
 }
