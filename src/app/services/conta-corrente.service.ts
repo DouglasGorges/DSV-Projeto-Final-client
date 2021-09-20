@@ -1,3 +1,4 @@
+import { FiltroPesquisa } from './../models/FiltroPesquisa';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Injectable } from '@angular/core';
@@ -38,5 +39,13 @@ export class ContaCorrenteService {
 
   delete(id: number): Observable<ContaCorrente> {
     return this.http.delete<ContaCorrente>(`${this.baseUrl}/delete/${id}`);
+  }
+
+  calcularSaldoTotal(filtro: FiltroPesquisa): Observable<Number> {
+    return this.http.post<Number>(`${this.baseUrl}/saldo`, filtro);
+  }
+
+  calcularSaldoContaCorrente(contaCorrente: ContaCorrente): Observable<Number> {
+    return this.http.get<Number>(`${this.baseUrl}/saldo/${contaCorrente._id}`);
   }
 }

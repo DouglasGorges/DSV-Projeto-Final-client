@@ -6,8 +6,7 @@ import { ContaCorrenteCadastrarComponent } from './components/views/conta-corren
 
 const routes: Routes = [
   {
-    path: "",
-    //path: "contaCorrente/create",
+    path: "contaCorrente/create",
     component: ContaCorrenteCadastrarComponent
   },
   {
