@@ -1,0 +1,33 @@
+.color1 {
+  color: #1a0907;
+}
+.color2 {
+  color: #493115;
+}
+.color3 {
+  color: #2075d9;
+}
+.color4 {
+  color: #bcd6ed;
+}
+.color5 {
+  color: #f8efed;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #eee;
+}
+.side-nav {
+  background-color: #395781;
+}
+.side-content {
+  background-color: #86b0e0;
+}
+.botoes {
+  margin-left: 50px;
+}
