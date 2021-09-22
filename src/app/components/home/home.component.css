@@ -1,19 +1,3 @@
-.color1 {
-  color: #1a0907;
-}
-.color2 {
-  color: #493115;
-}
-.color3 {
-  color: #2075d9;
-}
-.color4 {
-  color: #bcd6ed;
-}
-.color5 {
-  color: #f8efed;
-}
-
 .container {
   position: absolute;
   top: 0;
@@ -23,11 +7,55 @@
   background: #eee;
 }
 .side-nav {
-  background-color: #395781;
+  background-color: #0764ce;
 }
 .side-content {
-  background-color: #86b0e0;
+  background-color: #e7edf3;
 }
-.botoes {
-  margin-left: 50px;
+.div-btn-nav {
+  height: 50px;
+}
+.div-btn-nav:hover {
+  background-color: #e7edf3;
+}
+.div-btn-nav:hover .lbl-icon {
+  color: #000;
+  font-size: 15px;
+}
+.div-btn-nav:hover .btn-nav {
+  filter: invert(1);
+}
+.exit-btn:hover {
+  filter: invert(1);
+}
+.btn-nav {
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 30px;
+  height: 30px;
+}
+.lbl-icon {
+  margin-top: 16px;
+  margin-left: 5px;
+  position: fixed;
+  color: #eee;
+  font-size: 13px;
+}
+.exit-btn {
+  margin-top: 260%;
+}
+.dash {
+  margin-left: 10%;
+  margin-top: 10%;
+  width: 50%;
+}
+.table-dash {
+  width: 100%;
+  background-color: #e7edf3;
+}
+.lbl-op {
+  margin-top: 5em;
+  margin-left: 5%;
+  color: #eee;
+  font-size: 25px;
 }
