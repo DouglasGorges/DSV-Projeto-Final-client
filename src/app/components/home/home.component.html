@@ -4,7 +4,7 @@
     <img src="../../../assets/images/logo1.png" width="200px">
    </div>
   <br>
-    <div class="div-btn-nav">
+    <div class="div-btn-nav-active">
       <img src="../../../assets/images/home-icon.png" class="btn-nav">
       <span class="lbl-icon">Inicio</span>
     </div>
@@ -12,18 +12,19 @@
     <div class="div-btn-nav" mat-button [matMenuTriggerFor]="menu">
       <img src="../../../assets/images/bank-icon.png" class="btn-nav">
       <span class="lbl-icon">Intituição Bancária</span>
-      <mat-menu #menu="matMenu">
-        <button mat-menu-item>Nubank</button>
+      <mat-menu #menu="matMenu" class="submenu">
         <button mat-menu-item>Itaú</button>
+        <button mat-menu-item>Nubank</button>
       </mat-menu>
     </div>
   <br>
   <div class="div-btn-nav"  mat-button [matMenuTriggerFor]="menu">
     <img src="../../../assets/images/card-icon.png"  class="btn-nav">
     <span class="lbl-icon">Tipos de Relatório</span>
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item>Débitos</button>
-      <button mat-menu-item>Despesas</button>
+    <mat-menu #menu="matMenu" class="submenu">
+      <button mat-menu-item><a routerLink="/pages/bank1">Conta Corrente</a></button>
+      <button mat-menu-item><a routerLink="/pages/bank1">Conta Poupança</a></button>
+      
     </mat-menu>
   </div>
   <br>  

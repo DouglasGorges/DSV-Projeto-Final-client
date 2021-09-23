@@ -15,6 +15,16 @@
 .div-btn-nav {
   height: 50px;
 }
+.div-btn-nav-active {
+  background-color: #e7edf3;
+}
+.div-btn-nav-active .lbl-icon {
+  color: #000;
+  font-size: 15px;
+}
+.div-btn-nav-active .btn-nav {
+  filter: invert(1);
+}
 .div-btn-nav:hover {
   background-color: #e7edf3;
 }
@@ -54,8 +64,11 @@
   background-color: #e7edf3;
 }
 .lbl-op {
-  margin-top: 5em;
-  margin-left: 5%;
-  color: #eee;
+  margin-top: 10%;
+  margin-left: 20%;
+  color: rgb(0, 0, 0);
   font-size: 25px;
+}
+.submenu {
+  margin-left: 15px;
 }
