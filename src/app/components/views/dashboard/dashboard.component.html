@@ -18,13 +18,12 @@
       </mat-menu>
     </div>
   <br>
-  <div class="div-btn-nav"  mat-button [matMenuTriggerFor]="menu">
+  <div class="div-btn-nav" mat-button [matMenuTriggerFor]="menuRel">
     <img src="../../../assets/images/card-icon.png"  class="btn-nav">
     <span class="lbl-icon">Tipos de Relatório</span>
-    <mat-menu #menu="matMenu" class="submenu">
-      <button mat-menu-item><a routerLink="/pages/bank1">Conta Corrente</a></button>
-      <button mat-menu-item><a routerLink="/pages/bank1">Conta Poupança</a></button>
-      
+    <mat-menu #menuRel="matMenu" class="submenu">
+      <button (click)="correnteList()" mat-menu-item>Conta Corrente</button>
+      <button (click)="correnteList()" mat-menu-item>Conta Poupança</button>
     </mat-menu>
   </div>
   <br>  

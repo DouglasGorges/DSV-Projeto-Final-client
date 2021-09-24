@@ -23,7 +23,7 @@ export class ContaCorrenteService {
   }
 
   list(): Observable<ContaCorrente[]> {
-    return this.http.get<ContaCorrente[]>(`${this.baseUrl}/list`);
+    return this.http.get<ContaCorrente[]>(`${this.baseUrl}/conta-corrente-listar`);
   }
 
   findById(id: number): Observable<ContaCorrente> {
