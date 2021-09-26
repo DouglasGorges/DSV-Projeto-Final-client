@@ -1,74 +1,44 @@
-.container {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #eee;
-}
-.side-nav {
-  background-color: #0764ce;
-}
-.side-content {
-  background-color: #e7edf3;
-}
-.div-btn-nav {
-  height: 50px;
-}
-.div-btn-nav-active {
-  background-color: #e7edf3;
-}
-.div-btn-nav-active .lbl-icon {
-  color: #000;
-  font-size: 15px;
-}
-.div-btn-nav-active .btn-nav {
-  filter: invert(1);
-}
-.div-btn-nav:hover {
-  background-color: #e7edf3;
-}
-.div-btn-nav:hover .lbl-icon {
-  color: #000;
-  font-size: 15px;
-}
-.div-btn-nav:hover .btn-nav {
-  filter: invert(1);
-}
-.exit-btn:hover {
-  filter: invert(1);
-}
-.btn-nav {
-  margin-top: 10px;
-  margin-left: 20px;
-  width: 30px;
-  height: 30px;
-}
-.lbl-icon {
-  margin-top: 16px;
-  margin-left: 5px;
-  position: fixed;
-  color: #eee;
-  font-size: 13px;
-}
-.exit-btn {
-  margin-top: 260%;
-}
 .dash {
-  margin-left: 10%;
-  margin-top: 10%;
-  width: 50%;
+  padding-top: 80px;
+  background-color: #f1f1f1;
 }
 .table-dash {
-  width: 100%;
-  background-color: #e7edf3;
+  margin-left: 100px;
+  margin-top: 50px;
+  color: #ffffff;
 }
-.lbl-op {
-  margin-top: 10%;
-  margin-left: 20%;
-  color: rgb(0, 0, 0);
-  font-size: 25px;
+.card1 {
+  height: 100px;
+  width: 200px;
+  margin-left: 80px;
 }
-.submenu {
-  margin-left: 15px;
+.card2 {
+  height: 100px;
+  width: 200px;
+  margin-left: 80px;
+}
+.lbl-title {
+  margin-left: 20px;
+  margin-top: 50px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  color: #4b4b4b;
+}
+.lbl-description {
+  margin-left: 50px;
+  margin-top: 50px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+  color: #4b4b4b;
+}
+.down {
+  color: rgb(255, 0, 0);
+}
+.up {
+  color: rgb(33, 141, 0);
+}
+.col {
+  margin-left: 10px;
 }

@@ -1,0 +1,22 @@
+<mat-toolbar class="side-nav">
+  <mat-toolbar-row>
+   <a href="../">
+    <img src="./../../../../assets/images/calculate_icon.png" width="50px" height="50px">
+  </a> 
+  <a href="../" style="text-decoration:none"> <span class="logo">TryFin</span></a>
+    <button class="btn-nav" mat-button [matMenuTriggerFor]="belowMenu">Contas</button>
+      <mat-menu #belowMenu="matMenu"  yPosition="below">
+        <button  (click)="NubankList()" class="submenu" mat-menu-item> Nubank</button>
+        <button (click)="NubankList()" class="submenu" mat-menu-item> Itaú </button>
+      </mat-menu>
+     <!-- <button class="btn-nav" mat-button [matMenuTriggerFor]="belowMenu">Contas</button>
+      <mat-menu #belowMenu="matMenu" yPosition="below">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu>-->
+    <span class="spacer"></span>
+      <div class="exit-btn">
+        <button class="btn-nav" mat-button [matMenuTriggerFor]="belowMenu">Contas</button>
+      </div>
+  </mat-toolbar-row>
+</mat-toolbar>

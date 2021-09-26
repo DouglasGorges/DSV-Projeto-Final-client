@@ -1,6 +1,4 @@
-import { ContaCorrenteService } from 'src/app/services/conta-corrente.service';
 import { Component} from '@angular/core';
-import { Router } from "@angular/router";
 export interface PeriodicElement {
   desc: string;
   dtop: string ;
@@ -18,6 +16,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {dtop: '72/11/1111', desc: 'Compra de placa de video', val: 14.0067, tp: 'D'},
   {dtop: '82/11/1111', desc: 'Compra de bitcoin', val: 15.9994, tp: 'D'}
 ];
+
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -26,10 +25,4 @@ const ELEMENT_DATA: PeriodicElement[] = [
 export class DashboardComponent {
   displayedColumns: string[] = ['dtop', 'desc', 'val', 'tp'];
   dataSource = ELEMENT_DATA;
- 
-  constructor(private service: ContaCorrenteService, private router: Router) {}
-
-  correnteList(): void {
-        this.router.navigate(["teste"]);
-    };
 }
