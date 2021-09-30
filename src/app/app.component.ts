@@ -5,4 +5,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.sass'],
 })
-export class AppComponent{}
+export class AppComponent implements OnInit
+{
+  ngOnInit(): void{
+    console.log("Deu boa") ;
+ }
+}

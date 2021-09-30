@@ -1,3 +1,6 @@
+import { ContaCorrenteListarComponent } from './../conta-corrente/conta-corrente-listar/conta-corrente-listar.component';
+import { ContaCorrente } from './../../../models/Conta-Corrente';
+import { ContaCorrenteService } from './../../../services/conta-corrente.service';
 import { Component} from '@angular/core';
 export interface PeriodicElement {
   desc: string;
@@ -23,6 +26,13 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent {
+  constructor(private service: ContaCorrenteService){}
   displayedColumns: string[] = ['dtop', 'desc', 'val', 'tp'];
   dataSource = ELEMENT_DATA;
+
+  ngOnInit():void{
+    this.service.list().subscribe(conta =>{
+        console.log(conta);
+    });
+  }
 }
