@@ -6,8 +6,8 @@
   <a href="../" style="text-decoration:none"> <span class="logo">TryFin</span></a>
     <button class="btn-nav" mat-button [matMenuTriggerFor]="belowMenu">Contas</button>
       <mat-menu #belowMenu="matMenu"  yPosition="below">
-        <button  (click)="NubankList()" class="submenu" mat-menu-item> Nubank</button>
-        <button (click)="NubankList()" class="submenu" mat-menu-item> Itaú </button>
+        <button  (click)="ContaCorrenteList()" class="submenu" mat-menu-item> Corrente</button>
+        <button (click)="ContaCorrenteList()" class="submenu" mat-menu-item> Poupança </button>
       </mat-menu>
      <!-- <button class="btn-nav" mat-button [matMenuTriggerFor]="belowMenu">Contas</button>
       <mat-menu #belowMenu="matMenu" yPosition="below">

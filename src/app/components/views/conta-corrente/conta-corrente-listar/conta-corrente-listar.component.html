@@ -1,10 +1,16 @@
 <app-menu></app-menu>
 <br><br><br><br><br><br>
-<a routerLink="['/contaCorrente/create']">Cadastrar Conta Corrente</a>
-
+<!--<a routerLink="['/contaCorrente/create']">Cadastrar Conta Corrente</a>-->
 <ol>
     <li *ngFor="let contaCorrente of contasCorrentes">
         {{ contaCorrente.nome }}
     </li>
 </ol>
+<ol>
+    <li *ngFor="let contaCorrente of contasCorrentes">
+        {{ contaCorrente.saldo }}
+    </li>
+</ol>
+<button (click)="ContaCorrenteCadastrar()" class="submenu" mat-menu-item> Cadastrar</button>
+
 <app-footer></app-footer>

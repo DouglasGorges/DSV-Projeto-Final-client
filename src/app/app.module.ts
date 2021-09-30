@@ -15,7 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSidenavModule} from '@angular/material/sidenav';
 import { MatIconModule} from '@angular/material/icon';
 import { MatToolbarModule} from '@angular/material/toolbar';
-import { MatFormFieldModule} from '@angular/material/form-field';
+import { MatFormFieldModule, MatLabel} from '@angular/material/form-field';
 import { MatMenuModule} from '@angular/material/menu';
 import { MatTableModule} from '@angular/material/table';
 import {MatDividerModule} from '@angular/material/divider';
@@ -43,7 +43,8 @@ import {MatDividerModule} from '@angular/material/divider';
     MatFormFieldModule,
     MatMenuModule,
     MatTableModule,
-    MatDividerModule
+    MatDividerModule,
+    MatLabel
   ],
   providers: [],
   bootstrap: [AppComponent]

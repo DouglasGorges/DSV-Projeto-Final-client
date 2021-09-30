@@ -12,7 +12,7 @@ export class MenuComponent {
  
   constructor(private router: Router) {}
 
-  NubankList(): void {
+  ContaCorrenteList(): void {
         this.router.navigate(["contaCorrente/list"]);
     };
 
