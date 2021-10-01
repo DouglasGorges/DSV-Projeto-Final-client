@@ -1,9 +1,13 @@
 <div class="table-cadastro">
-  <label for="nome">Nome:</label>
-  <input type="text" name="nome" [(ngModel)]="nome"/>
+  <label for="nome" class="lbl">Nome:</label>
+  <input type="text" class="input" name="nome" [(ngModel)]="nome"/>
 </div>
 <div>
-  <label for="saldo">Saldo:</label>
-  <input type="text" name="saldo" [(ngModel)]="saldo"/>
+  <label for="saldo" class="lbl">Saldo:</label>
+  <input type="text" class="input" name="saldo" [(ngModel)]="saldo"/>
 </div>
-<button (click)="cadastrar()">Cadastrar</button>
+<div>
+  <label for="ativo" class="lbl">Ativo:</label>
+  <mat-radio-button class="margin" value="true" [(ngModel)]="ativo">After</mat-radio-button>
+</div>
+<button class="submenu" (click)="cadastrar()">Cadastrar</button>

@@ -1,5 +1,10 @@
+import { Data } from "@angular/router";
+
 export interface ContaCorrente {
   _id?: number;
   nome: string;
-  saldo: number;
+  saldo: DoubleRange;
+  ativo: boolean;
+  data: Date;
+
 }

@@ -1,3 +1,4 @@
+import { Data } from '@angular/router';
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { ContaCorrente } from 'src/app/models/Conta-Corrente';
@@ -11,7 +12,9 @@ import { ContaCorrenteService } from 'src/app/services/conta-corrente.service';
 })
 export class ContaCorrenteCadastrarComponent implements OnInit {
   nome!: string;
-  saldo!: number;
+  saldo!: DoubleRange;
+  ativo!: boolean;
+  data!: null;
 
   constructor(private contaCorrenteService: ContaCorrenteService, private router: Router) {}
 
@@ -21,7 +24,9 @@ export class ContaCorrenteCadastrarComponent implements OnInit {
 
    let contaCorrente: ContaCorrente = {
       nome: this.nome,
-      saldo: this.saldo
+      saldo : this.saldo,
+      ativo: this.ativo,
+      data: this.data
     }
 
     this.contaCorrenteService.create(contaCorrente).subscribe((contaCorrenteCriada) => {

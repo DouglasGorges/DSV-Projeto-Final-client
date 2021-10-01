@@ -1,16 +1,29 @@
 <app-menu></app-menu>
 <br><br><br><br><br><br>
 <!--<a routerLink="['/contaCorrente/create']">Cadastrar Conta Corrente</a>-->
-<ol>
-    <li *ngFor="let contaCorrente of contasCorrentes">
-        {{ contaCorrente.nome }}
-    </li>
-</ol>
-<ol>
-    <li *ngFor="let contaCorrente of contasCorrentes">
-        {{ contaCorrente.saldo }}
-    </li>
-</ol>
+
+<div *ngFor="let contaCorrente of contasCorrentes">
+    <li class="lista" >
+      Nome:
+       {{ contaCorrente.nome }}
+     </li>
+     <br>
+     <li class="lista">
+      Saldo:
+       {{ contaCorrente.saldo }}
+     </li>
+     <li class="lista">
+        Ativo:
+         {{ contaCorrente.ativo }}
+       </li>
+       <li class="lista">
+        Data:
+         {{ contaCorrente.data }}
+       </li>
+  </div>
+  
+  
+
 <button (click)="ContaCorrenteCadastrar()" class="submenu" mat-menu-item> Cadastrar</button>
 
 <app-footer></app-footer>
