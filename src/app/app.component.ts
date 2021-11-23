@@ -7,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit
 {
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
   ngOnInit(): void{
     console.log("Deu boa") ;
  }
  Cadastrar() {
+   alert(this.Cadastrar);
    console.log("Cadastrado")
  }
  enableProdMode(){
