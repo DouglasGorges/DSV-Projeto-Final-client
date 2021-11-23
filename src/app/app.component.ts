@@ -10,4 +10,10 @@ export class AppComponent implements OnInit
   ngOnInit(): void{
     console.log("Deu boa") ;
  }
+ Cadastrar() {
+   console.log("Cadastrado")
+ }
+ enableProdMode(){
+   console.log("Chamado")
+ }
 }
