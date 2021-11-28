@@ -4,7 +4,7 @@ import { StatusTransacao } from "./StatusTransacao";
 
 export interface FiltroPesquisa {
   contaCorrente?: ContaCorrente;
-  categorias?: Categoria[];
+  listaCategorias?: Categoria[];
   statusTransacao?: StatusTransacao;
   dtVctoInicial?: Date;
   dtVctoFinal?: Date;

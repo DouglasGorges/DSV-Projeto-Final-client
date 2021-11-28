@@ -1,5 +1,7 @@
 export interface Categoria {
-  _id?: number;
+  id?: number;
   nome: string;
   cor: string;
+  ativo: boolean;
+  criadoEm: Date;
 }

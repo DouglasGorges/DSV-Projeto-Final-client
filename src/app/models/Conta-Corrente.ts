@@ -1,10 +1,7 @@
-import { Data } from "@angular/router";
-
 export interface ContaCorrente {
-  _id?: number;
+  id?: number;
   nome: string;
-  saldo: DoubleRange;
+  saldoInicial: number;
   ativo: boolean;
-  data: Date;
-
+  criadoEm: Date;
 }

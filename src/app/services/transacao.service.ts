@@ -10,7 +10,7 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root',
 })
 export class TransacaoService {
-  private baseUrl = `${environment.apiUrl}/contaCorrente`;
+  private baseUrl = `${environment.apiUrl}/transacao`;
 
   constructor(private http: HttpClient) {}
 

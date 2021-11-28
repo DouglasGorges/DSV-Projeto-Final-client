@@ -46,6 +46,6 @@ export class ContaCorrenteService {
   }
 
   calcularSaldoContaCorrente(contaCorrente: ContaCorrente): Observable<Number> {
-    return this.http.get<Number>(`${this.baseUrl}/saldo/${contaCorrente._id}`);
+    return this.http.get<Number>(`${this.baseUrl}/saldo/${contaCorrente.id}`);
   }
 }

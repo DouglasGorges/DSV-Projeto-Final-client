@@ -33,7 +33,7 @@
   line-height: 26px;
   color: #4b4b4b;
 }
-.down {
+.down, .red {
   color: rgb(255, 0, 0);
 }
 .up {
@@ -41,4 +41,8 @@
 }
 .col {
   margin-left: 10px;
+}
+table {
+  width: 100%;
+  margin-top: 16px;
 }

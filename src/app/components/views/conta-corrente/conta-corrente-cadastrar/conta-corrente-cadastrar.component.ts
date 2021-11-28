@@ -12,9 +12,9 @@ import { ContaCorrenteService } from 'src/app/services/conta-corrente.service';
 })
 export class ContaCorrenteCadastrarComponent implements OnInit {
   nome!: string;
-  saldo!: DoubleRange;
+  saldo!: number;
   ativo!: boolean;
-  data!: null;
+  criadoEm!: Date;
 
   constructor(private contaCorrenteService: ContaCorrenteService, private router: Router) {}
 
@@ -24,9 +24,9 @@ export class ContaCorrenteCadastrarComponent implements OnInit {
 
    let contaCorrente: ContaCorrente = {
       nome: this.nome,
-      saldo : this.saldo,
+      saldoInicial : this.saldo,
       ativo: this.ativo,
-      data: this.data
+      criadoEm: this.criadoEm
     }
 
     this.contaCorrenteService.create(contaCorrente).subscribe((contaCorrenteCriada) => {

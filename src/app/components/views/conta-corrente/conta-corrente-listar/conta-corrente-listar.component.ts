@@ -21,8 +21,6 @@ export class ContaCorrenteListarComponent implements OnInit {
   ngOnInit(): void {
     this.contaCorrenteService.list().subscribe((contasCorrentes) => {
       this.contasCorrentes = contasCorrentes;
-      console.log(contasCorrentes);
-
     });
   }
 
